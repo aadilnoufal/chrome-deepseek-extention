@@ -3,12 +3,13 @@
 <head>
   <title>DeepSeek Chat</title>
   <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <h1>DeepSeek Chat</h1>
-      <button id="resetButton">Reset Chat</button>
+      <h1 class="header-title">DeepSeek Chat</h1>
+      <button id="resetButton" class="reset-button">Reset Chat</button>
     </div>
     
     <div id="chatHistory" class="chat-history">
@@ -17,7 +18,7 @@
     
     <div class="input-area">
       <textarea id="userInput" placeholder="Type your message here..."></textarea>
-      <button id="sendButton">Send</button>
+      <button id="sendButton" class="send-button">Send</button>
     </div>
   </div>
   

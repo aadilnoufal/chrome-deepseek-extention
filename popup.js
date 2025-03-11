@@ -1,4 +1,3 @@
-// Store conversation history
 let conversationHistory = [];
 
 // DOM elements
@@ -103,6 +102,7 @@ async function callDeepSeekAPI(messages) {
 function addMessage(role, content) {
   const messageDiv = document.createElement('div');
   messageDiv.className = `message ${role}-message`;
+  messageDiv.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
   
   // Process markdown-like syntax for code blocks
   const formattedContent = formatMessageContent(content);
